@@ -9,6 +9,8 @@ jobs:
   test:
     # Operating System
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     # Job steps
     steps:
       - uses: actions/checkout@v1
